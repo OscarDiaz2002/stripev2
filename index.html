@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+   <!-- CHARSET -->
+   <meta charset="UTF-8">
+   <!-- IE-EDGE -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- VIEWPORT -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- DESCRIPTION -->
+   <meta name="description" content="Aprende a desarrollar páginas web desde cero">
+   <!-- AUTHOR -->
+   <meta name="author" content="Oscar Fernado Díaz Santamaria">
+   <!-- TITLE -->
+   <title>Tomorrow Store</title>
+   <!-- STYLES -->
+   <link rel="stylesheet" href="css/styles.css">
+   <!-- FONT AWESOME -->
+   <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <nav class="navbar">
+      <ul>
+         <li><a href="#home">Inicio</a></li>
+         <li><a href="#arepas">Arepas</a></li>
+         <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <div class="search-bar">
+         <img src="imagenes/logotomorrow.png" alt="logo">
+         <input type="text" placeholder="Buscar...">
+      </div>
+   </nav>
+
+   <header class="container">
+      <span>Tomorrow</span>
+   </header>
+
+   <section class="arepas" id="arepas"></section>
+
+   <footer class="footer">
+      <div class="contact-info">
+         <p>Teléfono: +123 456 7890</p>
+         <p>Email: contacto@tomorrowstore.com</p>
+      </div>
+      <div class="map-container">
+         <iframe 
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d131408.85227791896!2d-73.92713665354884!3d40.75776587481044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af62c4a1ff%3A0x1e3c8c01e071c7e1!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1675356339133!5m2!1sen!2sus" 
+           allowfullscreen="" 
+           loading="lazy">
+         </iframe>
+      </div>
+      <div class="socials">
+         <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+         <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+         <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+         <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+   </footer>
+
+   <template id="arepa-template">
+      <figure class="arepa">
+         <img>
+         <figcaption></figcaption>
+      </figure>
+   </template>
+
+   <script src="https://js.stripe.com/v3/"></script>
+   <script src="js/script.js" type="module"></script>
+</body>
+</html>
